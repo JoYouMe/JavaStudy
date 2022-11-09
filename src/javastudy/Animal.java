@@ -1,4 +1,5 @@
 package javastudy;
+//상속 예제 Animal
 
 public class Animal {
 	double weight;

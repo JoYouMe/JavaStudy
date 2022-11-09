@@ -1,4 +1,5 @@
 package javastudy;
+//상속 예제 Animal
 
 public class Lion extends Animal {
 	int legs = 4;
