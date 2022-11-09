@@ -7,6 +7,7 @@ public class Employee {
 	protected int salary; // 월급: : protected 멤버
 	private int rrn; // 주민등록번호: private 멤버
 
+	// 클래스명과 동일한 생성자 생성
 	public Employee(String name, String address, int salary, int rrn) {
 		this.name = name;
 		this.address = address;
