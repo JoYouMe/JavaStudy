@@ -1,4 +1,5 @@
 package javastudy;
+//코딩 실습 직원과 매니저
 
 public class Manager extends Employee {
 	private int bonus;
