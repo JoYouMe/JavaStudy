@@ -2,6 +2,7 @@ package javastudy;
 
 import javax.swing.JFrame;
 
+//마우스로 그림 그리기
 public class Scribble extends JFrame {
 	public Scribble() {
 		setSize(300, 300);

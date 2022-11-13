@@ -6,6 +6,7 @@ import java.awt.event.MouseMotionListener;
 
 import javax.swing.JPanel;
 
+//마우스로 그림 그리기
 public class MyPanel extends JPanel implements MouseMotionListener {
 	private int index = 0;
 	Point[] array = new Point[1000];
