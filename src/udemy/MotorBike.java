@@ -4,6 +4,10 @@ public class MotorBike {
 	// state
 	private int speed; // member variable
 	
+	MotorBike(){
+		this(5); //this.speed = 5;
+	}
+	
 	MotorBike(int speed){
 		this.speed = speed;
 	}
