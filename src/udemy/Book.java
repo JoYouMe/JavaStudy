@@ -1,22 +1,32 @@
 package udemy;
 
+import java.util.ArrayList;
+
 public class Book {
-	private int noOfCopies;
-	
-	public Book(int noOfCopies){
-		this.noOfCopies = noOfCopies;
+	// state
+	private int id;
+	private String name;
+	private String author;
+	private ArrayList<Review> reviews = new ArrayList<>(); // 리뷰를 ArrayList로 보관
+
+	// creation
+	public Book(int id, String name, String author) {
+		this.id = id;
+		this.name = name;
+		this.author = author;
 	}
 	
-	public void setNoOfCopies(int noOfCopies) {
-		if(noOfCopies > 0)
-		this.noOfCopies = noOfCopies;
+	// operations
+	// 리뷰 작성
+	public void addReview(Review review) {
+		this.reviews.add(review);
 	}
 	
-	public void increaseNoOfCopies(int howMuch) {
-		setNoOfCopies(this.noOfCopies + howMuch);
+	// 표출을 위한 String
+	public String toString() {
+		return String.format("id = %d, name = %s, author = %s, Review = [%s]", id, name, author, reviews);
 	}
 	
-	public void decreaseNoOfCopies(int howMuch) {
-		setNoOfCopies(this.noOfCopies - howMuch);
+	
 	}
-}
+

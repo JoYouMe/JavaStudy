@@ -3,13 +3,13 @@ package udemy;
 public class BookRunner {
 
 	public static void main(String[] args) {
-		Book artOfComputerProgramming = new Book(100);
-		Book effectiveJava = new Book(50);
-		Book cleanCode = new Book(40);
+		Book book = new Book(123, "Object Oriented Programming with Java", "Ranga");
 		
-		artOfComputerProgramming.setNoOfCopies(100);
-		effectiveJava.setNoOfCopies(50);
-		cleanCode.setNoOfCopies(20);
+		book.addReview(new Review(10,"Great Book", 5));
+		book.addReview(new Review(101,"Awesome", 5));
+		
+		System.out.println(book);
+		
 	}
 
 }
