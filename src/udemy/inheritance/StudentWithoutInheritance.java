@@ -1,9 +1,12 @@
-package udemy;
+package udemy.inheritance;
 
-public class Person {
+public class StudentWithoutInheritance {
 	private String name;
 	private String emailString;
 	private String phoneNumber;
+	
+	private String college;
+	private int year;
 	
 	public String getName() {
 		return name;
@@ -23,6 +26,20 @@ public class Person {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
+	public String getCollege() {
+		return college;
+	}
+	public void setCollege(String college) {
+		this.college = college;
+	}
+	public int getYear() {
+		return year;
+	}
+	public void setYear(int year) {
+		this.year = year;
+	}
+	
+	
 	
 	
 	

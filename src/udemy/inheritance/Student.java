@@ -1,4 +1,4 @@
-package udemy;
+package udemy.inheritance;
 
 public class Student extends Person{
 	private String collegeName;
