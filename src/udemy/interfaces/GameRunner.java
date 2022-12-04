@@ -3,12 +3,15 @@ package udemy.interfaces;
 public class GameRunner {
 
 	public static void main(String[] args) {
-		GameingConsole game = new ChessGame();
-	//	ChessGame game = new ChessGame();
-		game.up();
-		game.down();
-		game.left();
-		game.right();
+		GameingConsole[] games = { new ChessGame(), new MarioGame()};
+				for(GameingConsole game : games) {
+					game.up();
+					game.down();
+					game.left();
+					game.right();
+					
+				}
+
 	}
 
 }
